@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Object</h2>
+    <p>Objects are variables too. But objects can contain many values.</p>
+    <script>
+      // Array , Object
+      // key : value
+      let user1 = {
+        firstName: "Yogesh",
+        lastName: "Parek",
+        city: "Surat",
+        birthYear: 1998,
+        address: {
+          flatNo: "D-4",
+          floorNo: 3,
+          landMark: "Checkpost",
+        },
+        details: function () {
+          return `My name is ${user1.firstName}`;
+        },
+        calcAge: function () {
+          return 2022 - user1.birthYear;
+        },
+      };
+
+      console.log(user1.address.landMark);
+      console.log(user1.details());
+      console.log(user1.calcAge());
+
+      //
+      let product1 = {
+        name: "Nokia C31",
+        price: 200000,
+        is_featured: false,
+        description: "Nokia C31 width 4gb ram",
+      };
+      let product2 = {
+        name: "Samsung C31",
+        price: 200000,
+        is_featured: true,
+        description: "Nokia C31 width 4gb ram",
+      };
+      let product3 = {
+        name: "Samsung C31",
+        price: 200000,
+        is_featured: true,
+        description: "Nokia C31 width 4gb ram",
+      };
+
+      //   console.log(product1.name);
+      //   console.log(product1.price);
+    </script>
+  </body>
+</html>

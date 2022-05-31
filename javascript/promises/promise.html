@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <script>
+      //   setTimeout(function () {
+      //     console.log("Hey");
+      //   }, 5000);
+      console.log(1);
+      console.log(2);
+      for (let i = 0; i <= 10; i++) {
+        console.log("hey");
+      }
+      console.log(3);
+      console.log(4);
+    </script> -->
+    <script>
+      let lotteryNumber = 100;
+
+      let lotteryTicket = new Promise(function (resolve, reject) {
+        setTimeout(() => {
+          if (lotteryNumber === 100) {
+            resolve("Yes You won lottery");
+          } else {
+            reject("Better Luck Next Time");
+          }
+        }, 5000);
+      });
+
+      //   fetch() promise => then
+
+      //   console.log(lotteryTicket);
+      //   lotteryTicket
+      //     .then(function (res) {
+      //       console.log(res);
+      //     })
+      //     .catch(function (err) {
+      //       console.log(err);
+      //     });
+
+      //   lotteryTicket
+      //     .then((resp) => console.log(resp))
+      //     .catch((err) => console.log(err));
+
+      //   promise
+      function singleProduct(datas) {
+        for (let singleData of datas) {
+          console.log(singleData);
+          document.write(`<p> ${singleData.title} </p>`);
+          document.write(`<img src="${singleData.image}" width="150px" />`);
+        }
+      }
+      fetch("https://fakestoreapi.com/products")
+        .then((resp) => resp.json())
+        .then((data) => singleProduct(data))
+        .catch((err) => {
+          console.log(err);
+          alert("Please turn on internet");
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>button 1</button>
+    <button>button 2</button>
+    <button>button 3</button>
+
+    <script>
+      let btn = document.querySelectorAll("button");
+
+      for (let i = 0; i < btn.length; i++) {
+        btn[i].addEventListener("click", () => {
+          alert("Hello");
+        });
+      }
+
+      //   for (let singleBtn of btn) {
+      //     singleBtn.addEventListener("click", () => alert("Hey i am just alert"));
+      //   }
+    </script>
+
+    <!-- <h1 id="intro">Hello World</h1>
+
+    <input type="text" id="inputBox" />
+    <h2>Hello I am just a heading 2</h2> -->
+
+    <script>
+      //   let inputBox = document.querySelector("#inputBox");
+      //   let heading2 = document.querySelector("h2");
+
+      //   inputBox.addEventListener("keyup", (event) => {
+      //     let someText = event.target.value;
+      //     heading2.textContent = someText;
+      //   });
+
+      //   let intro = document.getElementById("intro");
+      //   let intro = document.querySelector("#intro");
+      // intro.addEventListener(event , function)
+
+      //   intro.addEventListener("click", function () {
+      //     // alert("Hello I am just an alert");
+      //     intro.style.color = "red";
+      //   });
+
+      //   let btn = document.querySelectorAll("button");
+
+      //   for (let singleBtn of btn) {
+      //   }
+    </script>
+
+    <!-- <script>
+      let products = ["Apple", "Banana", "Mango"];
+
+      //   for of
+      for (let singleProduct of products) {
+        console.log(singleProduct);
+      }
+    </script> -->
+  </body>
+</html>

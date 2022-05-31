@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Welcome</h1>
+    <p id="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolorum
+      eveniet hic excepturi necessitatibus quo, fuga magni, aspernatur cumque
+      ullam amet recusandae veniam atque fugiat placeat ratione iure vero alias.
+    </p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse quod sequi
+      aliquam fugit temporibus magnam voluptatem praesentium sunt adipisci
+      assumenda repudiandae ut accusamus expedita odit fuga excepturi,
+      aspernatur nulla tempore.
+    </p>
+    <button onclick="someDomChange()">Click Me</button>
+    <!-- DOCUMENT OBJECT MODAL -->
+    <script>
+      let myButton = document.querySelector("button");
+      let para = document.querySelector("#para");
+
+      function someDomChange() {
+        para.textContent = "Hello World";
+        para.title = "Hey I have been added";
+        para.style.color = "red";
+        para.style.backgroundColor = "black";
+      }
+    </script>
+  </body>
+</html>

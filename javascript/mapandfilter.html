@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- map , filter  -->
+    <input type="text" id="inputBox" />
+    <button>Search</button>
+    <script>
+      let products = [
+        {
+          name: "adidas",
+          price: 20000,
+        },
+        {
+          name: "puma",
+          price: 20000,
+        },
+        {
+          name: "adidas",
+          price: 20000,
+        },
+      ];
+
+      let btn = document.querySelector("button");
+      let inputBox = document.querySelector("#inputBox");
+
+      btn.addEventListener("click", () => {
+        let searchTerm = inputBox.value;
+        let searchResult = products.filter((item) => item.name === searchTerm);
+        console.log(searchResult);
+        for (let singleData of searchResult) {
+          inputBox.insertAdjacentHTML(
+            "afterend",
+            `<p> ${singleData.name} : ${singleData.price} </p>`
+          );
+        }
+      });
+
+      //   let number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+      //   const filterArray = number.filter((item) => item > 5);
+      //   console.log(filterArray);
+      //   const twoTable = number.map((item) => item > 5);
+      //   console.log(twoTable);
+
+      //   let arr = [100, 199, 2000, 100, 77, 1, 10000, 33, 55, 1986];
+
+      //   const newArry = arr.map((item, index, ent) => item + 5);
+      //   console.log(newArry);
+    </script>
+  </body>
+</html>

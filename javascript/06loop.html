@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .text-red {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let product1 = {
+        id: 1,
+        name: "Apple 13",
+        price: 100000,
+        modal: { type: "32gb", color: "black" },
+      };
+      let product2 = {
+        id: 2,
+        name: "samsung",
+        price: 2000,
+        modal: { type: "128gb", color: "black" },
+      };
+      let product3 = {
+        id: 3,
+        name: "Mi",
+        price: 4000,
+        modal: { type: "62gb", color: "White" },
+      };
+      let userName = "Nikunj";
+      let product = [product1, product2, product3];
+
+      for (let indexNumber = 0; indexNumber < product.length; indexNumber++) {
+        // console.log(product[indexNumber].name);
+        document.write(
+          `<p class="text-red">Product name is ${product[indexNumber].name}</p>`
+        );
+        document.write(
+          `<p>Product Price : $${product[indexNumber].price} <strike>${
+            product[indexNumber].price * 1.5
+          }</strike>  </p>`
+        );
+        document.write("<button> Buy Now </button>");
+        document.write("<hr />");
+      }
+
+      //   statement1 => initialValue
+      //   statement2 => condition
+      //   statement3 => inc / dec
+
+      // for(statement1 , statement2 , statement3) {
+
+      // }
+
+      //   let useName = "yogesh";
+      //   useName = "dhaval";
+      //   console.log(useName);
+      //   let num = 1;
+      //   num = num + 1;
+      //   num++ => num = num + 1
+      //   console.log(num);
+      //   number 3
+
+      //   let friends = ["raj", "yogesh", "nikunj"];
+      //   //   console.log(friends[0]);
+      //   //   console.log(friends[1]);
+
+      //   for (let indexNumber = 0; indexNumber <= 2; indexNumber++) {
+      //     console.log(friends[indexNumber]);
+      //   }
+
+      //   for (let number = 1; number <= 10; number = number + 1) {
+      //     console.log(`number of step taken today ${number}`);
+      //   }
+    </script>
+  </body>
+</html>

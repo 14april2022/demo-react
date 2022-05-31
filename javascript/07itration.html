@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let product1 = {
+        id: 1,
+        name: "Apple 13",
+        price: 100000,
+        modal: { type: "32gb", color: "black" },
+      };
+      let product2 = {
+        id: 2,
+        name: "samsung",
+        price: 2000,
+        modal: { type: "128gb", color: "black" },
+      };
+      let product3 = {
+        id: 3,
+        name: "Mi",
+        price: 4000,
+        modal: { type: "62gb", color: "White" },
+      };
+      let product = [product1, product2, product3];
+
+      product.forEach((item, index) => {
+        console.log(item.id);
+        console.log("--------------------");
+      });
+
+      // let friends = [
+      //   "akshay",
+      //   "kaushal",
+      //   "Harsh",
+      //   "Raj",
+      //   "Rohit",
+      //   "Dhruv",
+      //   "Nikunj",
+      // ];
+
+      // // console.log(friends[1]);
+
+      // friends.forEach((element, i, e) =>
+      //   document.write(`<p> ${i + 1} : ${element}</p>`)
+      // );
+
+      // friends.forEach(function (item, index, ent) {
+      //   // console.log(`${index + 1} : ${item}`);
+      //   document.write(`<p> ${index + 1} : ${item} </p>`);
+      // });
+    </script>
+  </body>
+</html>

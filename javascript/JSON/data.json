@@ -1,0 +1,36 @@
+{
+    "allProducts": [
+        {
+            "id": 1,
+            "product_name": "Nokia C21",
+            "on_sale": true,
+            "details": {
+                "storage": "8gb RAM , 128gb ROM",
+                "color": [
+                    "red",
+                    "skyblue"
+                ]
+            },
+            "attachment": [
+                "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+                "https://media.istockphoto.com/photos/mountain-landscape-picture-id517188688?k=20&m=517188688&s=612x612&w=0&h=i38qBm2P-6V4vZVEaMy_TaTEaoCMkYhvLCysE7yJQ5Q="
+            ]
+        },
+        {
+            "id": 2,
+            "product_name": "Samsung C21",
+            "on_sale": false,
+            "details": {
+                "storage": "8gb RAM , 128gb ROM",
+                "color": [
+                    "red",
+                    "skyblue"
+                ]
+            },
+            "attachment": [
+                "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
+                "https://media.istockphoto.com/photos/mountain-landscape-picture-id517188688?k=20&m=517188688&s=612x612&w=0&h=i38qBm2P-6V4vZVEaMy_TaTEaoCMkYhvLCysE7yJQ5Q="
+            ]
+        }
+    ]
+}
