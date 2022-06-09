@@ -8,8 +8,33 @@
   </head>
   <body>
     <script>
-      let isLogin = true;
-      console.log(!isLogin);
+      let arry = [
+        {
+          id: 1,
+          name: "parth",
+        },
+        {
+          id: 2,
+          name: "alfiya",
+        },
+        {
+          id: 3,
+          name: "Karan",
+        },
+        {
+          id: 4,
+          name: "Kaushal",
+        },
+      ];
+
+      console.log(arry);
+
+      let filteredArray = arry.filter((item) => item.id !== 2);
+      console.log(filteredArray);
+      // const myDate = new Date();
+      // console.log(myDate.getTime().toString());
+      // let isLogin = true;
+      // console.log(!isLogin);
       //   let names = ["alfiya", "raj"];
 
       //   let [firstPerson, secondPerson] = names;
