@@ -1,6 +1,9 @@
-import React from "react";
-import Main from "./MultipleFormHandling/Main";
+import React, { useReducer } from "react";
+import Main from "./useReducer/Main";
 function App() {
+  // reducer is a function
+  // initialState  is a variable
+
   return <Main />;
 }
 

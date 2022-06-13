@@ -10,10 +10,9 @@ function TableRow({ id, index, firstName, lastName }) {
       <td> {firstName} </td>
       <td> {lastName} </td>
       <td>
-        {" "}
         <button className="btn btn-danger" onClick={() => handleDelete(id)}>
           Delete
-        </button>{" "}
+        </button>
       </td>
     </tr>
   );
