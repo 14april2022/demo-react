@@ -1,6 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { LoginContext } from "../App";
 function Nav() {
+  const { isLogin, setIsLogin } = useContext(LoginContext);
+  const navigate = useNavigate();
+  function handleLogout() {
+    setIsLogin(false);
+    navigate("/login");
+  }
+
   return (
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid">
@@ -41,6 +50,11 @@ function Nav() {
                 Courses
               </Link>
             </li>
+            {isLogin ? (
+              <li>
+                <button onClick={handleLogout}>Logout</button>
+              </li>
+            ) : null}
           </ul>
         </div>
       </div>

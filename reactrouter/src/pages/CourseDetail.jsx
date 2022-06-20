@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import Wrapper from "../component/Wrapper";
 import { data } from "../data";
 
 function CourseDetail() {
@@ -14,14 +15,16 @@ function CourseDetail() {
   }, []);
 
   return (
-    <div className="container">
-      <h1>Course Detail</h1>
-      <hr />
-      <div className="card p-5">
-        <h2> {singleCourseDetail.name} </h2>
-        <p> {singleCourseDetail.desp} </p>
+    <Wrapper>
+      <div className="container">
+        <h1>Course Detail</h1>
+        <hr />
+        <div className="card p-5">
+          <h2> {singleCourseDetail.name} </h2>
+          <p> {singleCourseDetail.desp} </p>
+        </div>
       </div>
-    </div>
+    </Wrapper>
   );
 }
 

@@ -1,10 +1,11 @@
 import React from "react";
+import Wrapper from "../component/Wrapper";
 
 function About() {
   return (
-    <div className="container">
+    <Wrapper>
       <h1>About Page</h1>
-    </div>
+    </Wrapper>
   );
 }
 

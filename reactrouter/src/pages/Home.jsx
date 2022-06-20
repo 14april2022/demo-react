@@ -1,10 +1,11 @@
 import React from "react";
+import Wrapper from "../component/Wrapper";
 
 function Home() {
   return (
-    <div className="container">
+    <Wrapper>
       <h1>Home Page</h1>
-    </div>
+    </Wrapper>
   );
 }
 

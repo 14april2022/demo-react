@@ -1,10 +1,11 @@
 import React from "react";
+import Wrapper from "../component/Wrapper";
 
 function Contact() {
   return (
-    <div className="container">
+    <Wrapper>
       <h1>Contact Page</h1>
-    </div>
+    </Wrapper>
   );
 }
 

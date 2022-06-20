@@ -1,9 +1,11 @@
 import React from "react";
 import { data } from "../data";
 import { Link } from "react-router-dom";
+import Wrapper from "../component/Wrapper";
+import { useContext } from "react";
 function Courses() {
   return (
-    <div className="container">
+    <Wrapper>
       <h1 className="mb-5">Your Courses</h1>
       {data.map((item) => {
         const { id, name } = item;
@@ -14,7 +16,7 @@ function Courses() {
           </div>
         );
       })}
-    </div>
+    </Wrapper>
   );
 }
 
