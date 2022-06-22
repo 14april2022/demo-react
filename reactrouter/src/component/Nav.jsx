@@ -50,6 +50,16 @@ function Nav() {
                 Courses
               </Link>
             </li>
+            <li className="nav-item">
+              <Link to="/add-course" className="nav-link">
+                Add course
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/view-courses" className="nav-link">
+                View All Courses
+              </Link>
+            </li>
             {isLogin ? (
               <li>
                 <button onClick={handleLogout}>Logout</button>

@@ -8,6 +8,8 @@ import Courses from "./pages/Courses";
 import CourseDetail from "./pages/CourseDetail";
 import Private from "./component/Private";
 import Login from "./pages/Login";
+import AddCourse from "./pages/AddCourse";
+import ViewCourses from "./pages/ViewCourses";
 export const LoginContext = createContext();
 function App() {
   const [isLogin, setIsLogin] = useState(false);
@@ -36,6 +38,8 @@ function App() {
         />
         <Route path="courses/:id" element={<CourseDetail />} />
         <Route path="login" element={<Login />} />
+        <Route path="add-course" element={<AddCourse />} />
+        <Route path="view-courses" element={<ViewCourses />} />
       </Routes>
     </LoginContext.Provider>
   );
