@@ -1,0 +1,9 @@
+td.placeholder-glow {
+  width: 20%;
+  padding: 0 10px;
+}
+
+td.placeholder-glow span {
+  width: 100%;
+  background-color: black;
+}
