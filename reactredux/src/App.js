@@ -1,11 +1,11 @@
-import Number from "./component/Number";
-import User from "./component/User";
+import Number from "./combineReduxComponent/Number";
+import User from "./combineReduxComponent/User";
 
 function App() {
   return (
     <>
-      <User />
       <Number />
+      <User />
     </>
   );
 }
