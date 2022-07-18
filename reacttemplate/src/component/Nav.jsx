@@ -1,6 +1,12 @@
 import React from "react";
-
+import { useSelector, useDispatch } from "react-redux";
+import { LOGOUT } from "../redux/loginRedux/type";
 function Nav() {
+  const isLogin = useSelector((state) => state.login.isLogin);
+  const dispatch = useDispatch();
+  if (!isLogin) {
+    return false;
+  }
   return (
     <nav
       className="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl"
@@ -59,7 +65,12 @@ function Nav() {
                 className="nav-link text-body font-weight-bold px-0"
               >
                 <i className="fa fa-user me-sm-1" />
-                <span className="d-sm-inline d-none">Sign In</span>
+                <span
+                  className="d-sm-inline d-none"
+                  onClick={() => dispatch({ type: LOGOUT })}
+                >
+                  Logout
+                </span>
               </a>
             </li>
             <li className="nav-item d-xl-none ps-3 d-flex align-items-center">

@@ -5,6 +5,8 @@ import Main from "./component/Main";
 import Private from "./component/Private";
 import AddCourse from "./pages/AddCourse";
 import Home from "./pages/Home";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
 
 function App() {
   useEffect(() => {
@@ -35,6 +37,8 @@ function App() {
               </Private>
             }
           />
+          <Route path="login" element={<Login />} />
+          <Route path="sign-up" element={<SignUp />} />
         </Routes>
       </Main>
     </>

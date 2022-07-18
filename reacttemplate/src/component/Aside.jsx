@@ -1,8 +1,14 @@
 import React from "react";
 import { navLink } from "../assests/navLink";
 import { NavLink } from "react-router-dom";
-
+import { useSelector } from "react-redux";
 function Aside() {
+  const isLogin = useSelector((state) => state.login.isLogin);
+
+  if (!isLogin) {
+    return false;
+  }
+
   return (
     <aside
       className="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3"
