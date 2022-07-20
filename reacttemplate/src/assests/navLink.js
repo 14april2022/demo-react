@@ -1,5 +1,5 @@
 import { AiOutlineHome, AiOutlineBook } from "react-icons/ai";
-
+import { HiOutlineViewGrid } from "react-icons/hi";
 export const navLink = [
   {
     id: 0,
@@ -12,5 +12,11 @@ export const navLink = [
     text: "Add Course",
     icon: <AiOutlineBook />,
     url: "/add-course",
+  },
+  {
+    id: 2,
+    text: "View All Courses",
+    url: "/view-all-courses",
+    icon: <HiOutlineViewGrid />,
   },
 ];

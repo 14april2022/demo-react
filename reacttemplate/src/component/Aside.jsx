@@ -17,8 +17,9 @@ function Aside() {
     >
       <div className="sidenav-header">
         <i
-          className="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none iconSidenav"
+          className="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0  d-xl-none iconSidenav"
           aria-hidden="true"
+          id="iconSidenav"
         />
         <a
           className="navbar-brand m-0"

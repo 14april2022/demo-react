@@ -1,5 +1,13 @@
 import { act } from "react-dom/test-utils";
-import { LOGIN_BEGIN, LOGIN_ERROR, LOGIN_SUCCESS, LOGOUT } from "./type";
+import {
+  LOGIN_BEGIN,
+  LOGIN_ERROR,
+  LOGIN_SUCCESS,
+  LOGOUT,
+  SIGNUP_BEGIN,
+  SIGNUP_ERROR,
+  SIGNUP_SUCCESS,
+} from "./type";
 
 function getLocalStorageData() {
   const isLogin = localStorage.getItem("login");
@@ -15,7 +23,6 @@ getLocalStorageData();
 const initialState = {
   isLogin: getLocalStorageData(),
   isLoading: false,
-  navigate: null,
 };
 
 export const loginReducer = (state = initialState, action) => {
@@ -36,6 +43,18 @@ export const loginReducer = (state = initialState, action) => {
   if (action.type === LOGOUT) {
     localStorage.removeItem("login");
     return { ...state, isLogin: false };
+  }
+
+  if (action.type === SIGNUP_BEGIN) {
+    return { ...state };
+  }
+
+  if (action.type === SIGNUP_SUCCESS) {
+    return { ...state };
+  }
+
+  if (action.type === SIGNUP_ERROR) {
+    return { ...state };
   }
 
   return state;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { signUp } from "../redux/signUpRedux/action";
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { signup } from "../redux/loginRedux/action";
 
 function SignUp() {
   const dispatch = useDispatch();
@@ -10,15 +10,16 @@ function SignUp() {
     password: "",
   });
 
-  const issignin = useSelector((state) => state.signUp.isLogin);
   function handleChange(e) {
     const { name, value } = e.target;
     setFormValue({ ...formValue, [name]: value });
   }
 
+  const navigate = useNavigate();
+
   function handleSubmit(e) {
     e.preventDefault();
-    dispatch(signUp(formValue));
+    dispatch(signup(formValue, navigate));
   }
 
   return (

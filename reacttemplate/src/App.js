@@ -4,6 +4,7 @@ import Aside from "./component/Aside";
 import Main from "./component/Main";
 import Private from "./component/Private";
 import AddCourse from "./pages/AddCourse";
+import AllCourses from "./pages/AllCourses";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
@@ -39,6 +40,14 @@ function App() {
           />
           <Route path="login" element={<Login />} />
           <Route path="sign-up" element={<SignUp />} />
+          <Route
+            path="view-all-courses"
+            element={
+              <Private>
+                <AllCourses />
+              </Private>
+            }
+          />
         </Routes>
       </Main>
     </>

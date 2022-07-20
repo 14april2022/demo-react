@@ -10,6 +10,7 @@ function Login() {
   });
 
   const isLogin = useSelector((state) => state.login.isLogin);
+  const isLoading = useSelector((state) => state.login.isLoading);
 
   function handleChange(e) {
     const { name, value } = e.target;
@@ -68,7 +69,7 @@ function Login() {
                       className="btn bg-gradient-info w-100 mt-4 mb-0"
                       onClick={handleSubmit}
                     >
-                      Sign in
+                      {isLoading ? "login..." : "Sign in"}
                     </button>
                   </div>
                 </form>
@@ -99,7 +100,6 @@ function Login() {
           </div>
         </div>
       </div>
-      ;
     </div>
   );
 }
